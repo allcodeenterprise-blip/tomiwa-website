@@ -1,1 +1,234 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomiwa Plank & Properties</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0b0b12;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .card {
+            max-width: 440px;
+            width: 100%;
+            background: #F5F0E8;
+            border-radius: 2rem;
+            padding: 3rem 2.5rem;
+            text-align: center;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Gold accent border */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #C9A96E, #E8D5A3, #C9A96E);
+        }
+
+        /* Divider line */
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: #C9A96E;
+            margin: 1rem auto 1.2rem;
+        }
+
+        /* COMPANY NAME — Only ONE */
+        .company-name {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1A1A1A;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+            margin-bottom: 0.3rem;
+        }
+
+        .business-card-label {
+            font-size: 0.65rem;
+            color: #C9A96E;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Website */
+        .website {
+            font-size: 0.9rem;
+            color: #8a7a5a;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        /* NAME */
+        .name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1A1A1A;
+            letter-spacing: 0.03em;
+        }
+
+        .title {
+            font-size: 0.9rem;
+            color: #6a6a6a;
+            font-weight: 400;
+            margin-bottom: 0.2rem;
+        }
+
+        /* Address */
+        .address {
+            font-size: 0.85rem;
+            color: #6a6a6a;
+            font-weight: 300;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Contact */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            padding: 0.4rem 0;
+            color: #1A1A1A;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+
+        .contact-item:hover {
+            color: #C9A96E;
+        }
+
+        .contact-item .icon {
+            font-size: 1rem;
+            width: 24px;
+            text-align: center;
+            color: #C9A96E;
+        }
+
+        /* WhatsApp Button */
+        .btn-whatsapp {
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            margin-top: 1.2rem;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 1.5rem;
+            font-size: 0.6rem;
+            color: #a0a0a0;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding-top: 1.2rem;
+        }
+
+        .footer .built-with {
+            color: #C9A96E;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .card {
+                padding: 2rem 1.5rem;
+            }
+            .company-name {
+                font-size: 1.6rem;
+            }
+            .name {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- BUSINESS CARD LABEL -->
+        <div class="business-card-label">— BUSINESS CARD —</div>
+
+        <!-- COMPANY NAME — ONLY ONE -->
+        <h1 class="company-name">Tomiwa Plank &amp; Properties</h1>
+
+        <!-- WEBSITE -->
+        <p class="website">https://allcodeenterprise-blip.github.io/tomiwa-website/</p>
+
+        <div class="divider"></div>
+
+        <!-- NAME & TITLE -->
+        <p class="name">Oladimeji Abiodun Tomiwa</p>
+        <p class="title">CEO — Tomiwa Plank &amp; Properties</p>
+
+        <!-- ADDRESS -->
+        <p class="address">Ejigbo Road, Agbowo Area</p>
+
+        <div class="divider"></div>
+
+        <!-- CONTACT -->
+        <a href="tel:+2348162553985" class="contact-item">
+            <span class="icon">📞</span> +234 816 255 3985
+        </a>
+
+        <a href="mailto:oladimejiabiodun345@gmail.com" class="contact-item">
+            <span class="icon">✉️</span> oladimejiabiodun345@gmail.com
+        </a>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/2348162553985" target="_blank" class="btn-whatsapp">
+            💬 Chat on WhatsApp
+        </a>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>© 2026 Tomiwa Plank &amp; Properties</p>
+            <p style="margin-top:0.2rem;">
+                Built with <a href="https://allcodeenterprise-blip.github.io/all-codes-enterprise/" target="_blank" class="built-with">ALL-CODES ENTERPRISE</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
